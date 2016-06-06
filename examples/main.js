@@ -1,44 +1,27 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
-import { Component, Store, Action, Dispatch } from 'severo';
 
-console.log(Dispatch);
+import Models from './models';
 
-Store.register('example', {
-    state: {
-        count: 0
-    },
-    
-    increase: function() { 
-        this.state.count++; 
-    },
-    
-    decrease: function() { 
-        this.state.count--;
-    }
-});
-
-Action.register('example', {
-    increase: () => Dispatch('INCREASE', {}),
-    decrease: () => Dispatch('DECREASE', {})
-});
-
-class MyComponent extends Component('example') {
-    constructor(props) {
-        super();
-    }
-    
-    render() {
-        return (
-            <div> 
-                <h1> {this.state.count} </h1>
-                <button onClick={this.increase}> Increase </button>
-                <button onClick={this.decrease}> Decrease </button>
-            </div>
-        )
-    }
-}
+import Counter from './components/CounterComponent';
+import List from './components/ListComponent';
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<MyComponent />, app);
+const Examples = () => {
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-xs-12 col-md-4">
+                    <Counter />
+                </div>
+                
+                <div className="col-xs-12 col-md-4">
+                    <List />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+ReactDOM.render(<Examples />, app);
