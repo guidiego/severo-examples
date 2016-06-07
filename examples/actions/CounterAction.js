@@ -1,5 +1,5 @@
-import { Dispatch } from 'severo';
+import { Dispatch } from 'severus';
 
-export const increase = () => Dispatch('INCREASE', {});
+export const increase = () => Dispatch('INCREASE');
 
-export const decrease = () => Dispatch('DECREASE', {});
+export const decrease = () => Dispatch('DECREASE');

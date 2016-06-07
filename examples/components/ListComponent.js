@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Connector } from 'severo';
+import { Connector } from 'severus';
 import uId from 'uid';
 
 class Input extends Component {

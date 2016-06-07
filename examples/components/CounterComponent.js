@@ -1,5 +1,5 @@
 import React from 'react';
-import { Connector } from 'severo';
+import { Connector } from 'severus';
 
 
 class Counter extends Connector('counter') {

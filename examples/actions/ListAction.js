@@ -1,4 +1,4 @@
-import { Dispatch } from 'severo';
+import { Dispatch } from 'severus';
 
 export const addTask = (value) => Dispatch('ADD_TASK', {value});
 

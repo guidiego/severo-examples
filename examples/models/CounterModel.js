@@ -1,4 +1,4 @@
-import { Model } from 'severo';
+import { Model } from 'severus';
 
 import * as action from '../actions/CounterAction';
 import * as reaction from '../reactions/CounterReaction';
