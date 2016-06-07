@@ -1,5 +1,5 @@
-# severo-examples
-A repo with examples for severo lib [DEMO](https://guidiego.github.io/severus-examples/)
+# Severus Examples
+A repo with examples for severus lib [DEMO](https://guidiego.github.io/severus-examples/)
 
 # Installing
 
